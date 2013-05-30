@@ -11,7 +11,7 @@ using namespace std;
 int max_iteration = 10;
 const int dim = 100;
 const double damp = 0.8;
-extern int g[dim][dim];
+int g[dim][dim];
 double pr[dim];
 
 void init_pr() {
