@@ -11,7 +11,6 @@ using namespace std;
 int max_iteration = 10;
 const int dim = 100;
 const double damp = 0.8;
-int g[dim][dim];
 double pr[dim];
 
 void init_pr() {
@@ -122,13 +121,15 @@ void check_deadend() {
 }
 
 int main() {
-	check_deadend();
-	init_pr();
+	//check_deadend();
 	init_map();
+	// __asm__
+	init_pr();
 	for (iter = 0; iter < max_iteration; ++iter) {
 		mapper();
 		reducer();
 	}
+	// __asm__
 	char filename[100];
 	strcpy(filename, "pr_result_");
 	char s[10];
