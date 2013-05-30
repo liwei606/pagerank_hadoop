@@ -1,4 +1,4 @@
 all: PageRank
 
-PageRank: PageRank.cpp test_graph.h
-	g++ PageRank.cpp -o PageRank
+PageRank: src/PageRank.cpp src/test_graph.h
+	g++ src/PageRank.cpp -o PageRank
