@@ -14,7 +14,7 @@ using namespace std;
  Return v, a vector of ranks such that v_i is the i-th rank from [0, 1]
 */
 const int V = 100;
-int max_iteration = 10;
+int max_iteration = 2;
 
 //int g[V][V] = {{0, 1, 1, 1}, {0, 0, 1, 1}, {0, 0, 0, 1} {0, 1, 0, 0}};
 

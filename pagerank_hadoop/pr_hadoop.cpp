@@ -8,7 +8,7 @@
 
 using namespace std;
 
-int max_iteration = 10;
+int max_iteration = 2;
 const int dim = 100;
 const double damp = 0.8;
 double pr[dim];
@@ -123,6 +123,7 @@ void check_deadend() {
 int main() {
 	//check_deadend();
 	init_map();
+	for (max_iteration = 5; max_iteration <= 50; max_iteration+=5) {
 	// __asm__
 	init_pr();
 	for (iter = 0; iter < max_iteration; ++iter) {
@@ -149,6 +150,7 @@ int main() {
 		cout << rank[i] << endl;
 	}
 	fclose(stdout);
+	}
 	return 0;
 }
 

@@ -1,0 +1,7 @@
+old fp power  : 0.8753893
+old core power: 2.638342
+new fp power  : 0.60648855000179
+new core power: 2.36944125000179
+sim cycles    : 3419628000
+old core ene  : 9022148176.776
+new core ene  : 8102607642.86112
